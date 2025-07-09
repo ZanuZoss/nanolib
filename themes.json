@@ -6,10 +6,10 @@
     "description": "It's not just a theme.",
     "long_description": "Massive Overhaul is a theme that aims to overhaul everything, and everything overhaul-able, on the iPod nano 7th Gen. It has a new battery, it has a new wallpaper, it even has new icons! And if something hasn't been overhauled, believe me, in the next future updates, oh, it will be.",
     "ipod": "7th Generation",
-    "image": "https://github.com/calculatelate/massiveOverhaul/blob/main/Logo.png",
+    "image": "https://github.com/calculatelate/massiveOverhaul/blob/main/Logo.png?raw=true",
     "screenshots": [
-      "https://github.com/calculatelate/massiveOverhaul/blob/main/Promo%201.png",
-      "https://github.com/calculatelate/massiveOverhaul/blob/main/Promo%202.png"
+      "https://github.com/calculatelate/massiveOverhaul/blob/main/Promo%201.png?raw=true",
+      "https://github.com/calculatelate/massiveOverhaul/blob/main/Promo%202.png?raw=true"
     ],
     "downloads": [
       { "title": "Massive Overhaul 1.0 - 2012", "url": "https://github.com/calculatelate/massiveOverhaul/releases/download/stable/MassiveOverhaul-1.0-2012.ipsw" },
