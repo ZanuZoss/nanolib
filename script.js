@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const buttons = [mainBtn, featuredBtn, recentBtn, searchBtn];
 
     mainDiv.classList.add("active");
-    mainBtn.classList.add("selected"); // Highlight the default button
+    mainBtn.classList.add("selected");
 
     mainBtn.addEventListener("click", () => {
         showSection(mainDiv, mainBtn);
@@ -40,15 +40,13 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function highlightButton(selectedButton) {
-        buttons.forEach((btn) => btn.classList.remove("selected")); // Remove highlight from all buttons
-        selectedButton.classList.add("selected"); // Highlight the selected button
+        buttons.forEach((btn) => btn.classList.remove("selected"));
+        selectedButton.classList.add("selected");
     }
 
-    // Fetch and render themes for both tabs
     fetch('themes.json')
         .then(response => response.json())
         .then(themes => {
-            // Featured
             const featuredContainer = document.querySelector('#featured .theme-preview-container');
             featuredContainer.innerHTML = '';
             themes.filter(theme => theme.featured).forEach((theme, index) => {
@@ -56,10 +54,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 featuredContainer.appendChild(preview);
             });
 
-            // Recents
             const recentContainer = document.querySelector('#recent .theme-preview-container');
             recentContainer.innerHTML = '';
-            // Sort by id descending for recents (assuming higher id = newer)
             themes
                 .filter(theme => theme.recent)
                 .sort((a, b) => Number(b.id) - Number(a.id))
@@ -68,7 +64,6 @@ document.addEventListener("DOMContentLoaded", () => {
                     recentContainer.appendChild(preview);
                 });
 
-            // Today's Featured
             const todaysFeaturedTheme = themes.find(theme => theme.todays_featured);
             if (todaysFeaturedTheme) {
                 const rside = document.getElementById('todays-featured');
@@ -95,7 +90,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 });
             }
 
-            // Add event listeners for "View More" buttons (works for both tabs)
             document.querySelectorAll('.view-more-btn').forEach(btn => {
                 btn.addEventListener('click', (e) => {
                     const themeId = e.target.getAttribute('data-id');

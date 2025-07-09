@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // Get theme id from URL
     const params = new URLSearchParams(window.location.search);
     const themeId = params.get("id");
 
