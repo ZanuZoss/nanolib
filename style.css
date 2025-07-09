@@ -241,6 +241,14 @@ h2 {
     margin: 12px 0;
     color: #333;
     font-size: 1.05em;
+    white-space: pre-line;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+    max-width: 500px;
+    width: 100%;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .theme-screenshots {
