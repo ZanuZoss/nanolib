@@ -15,7 +15,7 @@
       { "title": "Massive Overhaul 1.0 - 2012", "url": "https://github.com/calculatelate/massiveOverhaul/releases/download/stable/MassiveOverhaul-1.0-2012.ipsw" },
       { "title": "Massive Overhaul 1.0 - 2015", "url": "https://github.com/calculatelate/massiveOverhaul/releases/download/stable/MassiveOverhaul-1.0-2015.ipsw" }
     ],
-    "featured": false,
+    "featured": true,
     "recent": true,
     "todays_featured": false
   },
