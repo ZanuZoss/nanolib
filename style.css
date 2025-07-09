@@ -1,0 +1,359 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: transparent;
+}
+
+body {
+    background-color: #EBEBEB;
+    font-family: 'Helvetica', sans-serif;
+}
+
+.main {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    width: 100%;
+    text-align: center;
+}
+
+.featured, .recent {
+    display: none;
+}
+
+.main.active, .featured.active, .recent.active {
+    display: flex;
+}
+
+.lside {
+    float: left;
+}
+
+h1, p {
+    text-align: left;
+    font-family: 'Helvetica', sans-serif;
+}
+
+h2 {
+    margin-top: 12px;
+    text-align: center;
+    font-family: 'Helvetica', sans-serif;
+    color: #FFF;
+}
+
+.rside {
+    margin-left: 20px;
+    float: right;
+    height: 250px;
+}
+
+.topbar, .bottombar {
+    height: 50px;
+    border-top: 0.5px solid rgba(255, 255, 255, 0.4);
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.2);
+    background: linear-gradient(
+        to bottom,
+        #545454 0%, 
+        #414141 33%, 
+        #2A2B2A 67%, 
+        #171617 100%
+    );
+    z-index: 10;
+}
+
+#upload-link {
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    display: flex;
+    align-items: center;
+}
+
+#upload-btn {
+    height: 32px;
+    cursor: pointer;
+    background: transparent;
+}
+
+.bottombar {
+    display: flex;
+    justify-content: space-around; /* Spread buttons evenly */
+    align-items: center;
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(
+        to bottom,
+        #545454 0%, 
+        #414141 33%, 
+        #2A2B2A 67%, 
+        #171617 100%
+    );
+}
+
+.bottombar button {
+    flex: 1; /* Make buttons take equal width */
+    height: 100%;
+    border: none;
+    background: transparent;
+    color: white;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 1em;
+    cursor: pointer;
+    border-right: 1px solid rgba(59, 59, 58, 1);
+    border-left: 1px solid rgba(37, 37, 36, 1);
+}
+
+.bottombar button:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Add hover effect */
+}
+
+.bottombar button.selected {
+    background: linear-gradient(
+        to bottom,
+        #2A2A2A 0%, 
+        #353535 33%, 
+        #3E3E3E 67%, 
+        #444444 100%
+    ); /* Gradient for selected buttons */
+    color: white; /* Ensure text remains visible */
+}
+
+.featured {
+    display: flex;
+    flex-direction: row; /* Arrange columns horizontally */
+    align-items: flex-start; /* Align items at the top */
+    height: calc(100vh - 50px); /* Full height minus bottombar */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.featured-theme {
+    height: 300px;
+    width: 25%; /* Fixed width for the featured-theme */
+    background-color: #3a3a3a;
+}
+
+.theme-preview-container {
+    font-family: 'Helvetica', sans-serif;
+    display: flex;
+    flex-direction: row;      /* Row-wise (left to right) */
+    flex-wrap: wrap;          /* Wrap to new row when out of space */
+    width: 100%;
+    height: 100%;
+    align-items: flex-start;
+}
+
+.theme-preview {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 16px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    height: 100px;
+    width: calc(25% - 8px);
+    margin: 4px;
+    font-family: 'Helvetica', sans-serif;
+    position: relative;
+}
+
+.theme-img {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 14px;
+    background: #ddd;
+    flex-shrink: 0;
+}
+
+.theme-info {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 0;
+}
+
+.theme-name-author {
+    font-weight: bold;
+    margin-bottom: 4px;
+    color: #222;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.theme-author {
+    font-weight: normal;
+    color: #666;
+    margin-left: 4px;
+}
+
+.theme-desc {
+    font-size: 0.95em;
+    margin-bottom: 4px;
+    color: #444;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+}
+
+.theme-ipod {
+    font-size: 0.85em;
+    color: #888;
+}
+
+#theme-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.theme-detail {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.theme-img-large {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 12px;
+    background: #eee;
+    flex-shrink: 0;
+}
+
+.theme-detail-info {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.theme-long-desc {
+    margin: 12px 0;
+    color: #333;
+    font-size: 1.05em;
+}
+
+.theme-screenshots {
+    margin: 16px 0;
+}
+.screenshots-list {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+.theme-screenshot {
+    width: 120px;
+    /* height: 120px; */
+    object-fit: cover;
+    border-radius: 8px;
+    background: #ddd;
+}
+
+.theme-downloads ul {
+    list-style: none;
+    padding: 0;
+}
+.theme-downloads li {
+    margin-bottom: 8px;
+}
+.theme-downloads a {
+    color: #2A2B2A;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.todays-featured-container {
+    align-items: center;
+    background: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    max-width: 220px;
+}
+
+.todays-featured-overlay {
+    position: relative;
+    cursor: pointer;
+}
+
+.todays-featured-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    background: transparent;
+    box-shadow: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.todays-featured-info-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0px 18px 0px 18px;
+    pointer-events: none; /* So only the container handles clicks */
+}
+
+.todays-featured-info-overlay > * {
+    pointer-events: auto; /* Allow interaction if needed */
+}
+
+.todays-featured-name {
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-bottom: 2px;
+}
+
+.todays-featured-name,
+.todays-featured-author,
+.todays-featured-ipod,
+.todays-featured-desc {
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+}
+
+.todays-featured-screenshot {
+    display: block;
+    margin: 0 auto 0 auto;
+    height: 60%;
+    object-fit: cover;
+    justify-content: center;
+    margin-bottom: 15px;
+    border-radius: 6px;
+}
+
+.view-more-btn {
+    cursor: pointer;
+    /* padding: 4px 12px;
+    border: none;
+    border-radius: 4px;
+    background: #353535;
+    color: #fff;
+    cursor: pointer;
+    font-size: 0.95em;
+    transition: background 0.2s; */
+}
+
+.hidden {
+    display: none; /* Utility class to hide elements */
+}

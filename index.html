@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NanoLib</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="topbar"><h2>NanoLib</h2>
+    <a href="https://forms.gle/Wqf1pNNFPdfFNVRp9" target="_blank" id="upload-link">
+        <img src="Assets/UploadButton.png" alt="Upload" id="upload-btn">
+    </a></div>
+
+    <div class="content">
+        <div id="main" class="main active">
+            <div class="lside">
+                <img src="Assets/Welcome.png" alt="Welcome to NanoThemes">
+                <br>
+                <a href="https://discord.gg/5BVKfpuc92" target="_blank">
+        <img src="Assets/Discord.png" alt="Join the Community" id="discord-img">
+    </a>
+                <br>
+                <img src="Assets/Note.png" alt="Important Note">
+            </div>
+            <div class="rside">
+                <div class="rside" id="todays-featured"></div>
+            </div>
+        </div>
+
+            <div id="featured" class="featured hidden">
+                <div class="theme-preview-container">
+                </div>
+            </div>
+
+            <div id="recent" class="recent hidden">
+               <div class="theme-preview-container"></div>
+               </div>
+            </div>
+
+    <div class="bottombar">
+        <button id="mainpage-btn">Mainpage</button>
+        <button id="featured-btn">Featured</button>
+        <button id="recent-btn">Recent</button>
+        <button id="search-btn">Search</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

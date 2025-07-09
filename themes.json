@@ -1,0 +1,59 @@
+[
+  {
+    "id": "3",
+    "name": "Bloix",
+    "author": "q8j._",
+    "description": "A dark, pixelated theme for your Nano 7.",
+    "long_description": "Bloix is a sleek, dark pixelated theme for your iPod Nano 7 (2012 and 2015), featuring custom icons on a black background for a bold, modern look.",
+    "ipod": "7th Generation",
+    "image": "https://files.catbox.moe/4qwm1x.png",
+    "screenshots": [
+      "https://files.catbox.moe/2ehs9p.jpg",
+      "https://files.catbox.moe/tszur4.jpg"
+    ],
+    "downloads": [
+      { "title": "IPSW 2012", "url": "https://files.catbox.moe/a7g9es.ipsw" },
+      { "title": "IPSW 2015", "url": "https://files.catbox.moe/jw6kdo.ipsw" }
+    ],
+    "featured": false,
+    "recent": true,
+    "todays_featured": true
+  },
+  {
+    "id": "2",
+    "name": "Minecraft OS",
+    "author": "Omspeare",
+    "description": "Theme for Nano 6G with minecraft icons, wallpapers and more!",
+    "long_description": "No longer description available.",
+    "ipod": "6th Generation",
+    "image": "https://media.discordapp.net/attachments/1306838028077240385/1392531828677677166/WhatsApp_Image_2025-07-09_at_21.02.49_1.jpeg?ex=686fdfd3&is=686e8e53&hm=c9331381f100428afc36434bf47160c88efed99499e2e54cb77d50c12cf816ac&=&format=webp&width=871&height=960",
+    "screenshots": [
+      "https://media.discordapp.net/attachments/1306838028077240385/1392531828677677166/WhatsApp_Image_2025-07-09_at_21.02.49_1.jpeg?ex=686fdfd3&is=686e8e53&hm=c9331381f100428afc36434bf47160c88efed99499e2e54cb77d50c12cf816ac&=&format=webp&width=871&height=960"
+    ],
+    "downloads": [
+      { "title": "IPSW", "url": "https://mega.nz/file/2sIzmBwQ#Iav_dfmB0t_RAjo5qkm3m0GLd2QHYVRoOBXQI4stN7o" }
+    ],
+    "featured": false,
+    "recent": true,
+    "todays_featured": false
+  },
+  {
+    "id": "1",
+    "name": "An Even Worse Cat Theme",
+    "author": "g0ldER",
+    "description": "A quickly, horribly, made cat theme.",
+    "long_description": "No longer description available.",
+    "ipod": "7th Generation",
+    "image": "https://media.discordapp.net/attachments/1306838028077240385/1392526506999288060/icon.jpg?ex=686fdadf&is=686e895f&hm=5dc9916cba7d7a68b0a420d15c451e87eb05f2ad310e91cd22a974456ba1bcbd&=&format=webp&width=960&height=960",
+    "screenshots": [
+      "https://media.discordapp.net/attachments/1306838028077240385/1392526663891550270/Screenshot.png?ex=686fdb04&is=686e8984&hm=9b4ec84f7fd8095908dd2aadcbf7580b872c960a01c55cff9a416933787db36b&=&format=webp&quality=lossless"
+    ],
+    "downloads": [
+      { "title": "IPSW 2012", "url": "https://github.com/g0lder/NanoVault/raw/refs/heads/main/g0ldER/7g%20Cats/cat2_2012.ipsw?download=" },
+      { "title": "IPSW 2015", "url": "https://github.com/g0lder/NanoVault/raw/refs/heads/main/g0ldER/7g%20Cats/cat2_2015.ipsw?download=" }
+    ],
+    "featured": false,
+    "recent": true,
+    "todays_featured": false
+  }
+]
