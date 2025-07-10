@@ -8,13 +8,13 @@
     "ipod": "7th Generation",
     "image": "https://i.pinimg.com/736x/80/cf/56/80cf5639e119f503cc1cc0dd43f47fba.jpg",
     "screenshots": [
-      "https://github.com/lycanld/IPSWVault/releases/download/tanuki1/80cf5639e119f503cc1cc0dd43f47fba.jpg"
+      "https://github.com/lycanld/IPSWVault/releases/download/tanuki1/80cf5639e119f503cc1cc0dd43f47fba.jpg?raw=true"
     ],
     "downloads": [
       { "title": "IPSW 2012 - Light Mode", "url": "https://github.com/lycanld/IPSWVault/releases/download/tanuki1/nanOS_Pacific_nano7_Light_Icons_2012.Lycan.s.Moddedc.Edition.ipsw" },
       { "title": "IPSW 2015 - Light Mode", "url": "Light Mode: https://github.com/lycanld/IPSWVault/releases/download/tanuki1/nanOS_Pacific_nano7_Light_Icons_2015.Lycan.s.Modded.Edition.ipsw" }
     ],
-    "featured": true,
+    "featured": false,
     "recent": true,
     "todays_featured": false
   },
