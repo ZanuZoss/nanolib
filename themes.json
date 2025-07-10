@@ -27,6 +27,7 @@
     "ipod": "7th Generation",
     "image": "https://github.com/calculatelate/massiveOverhaul/blob/main/Logo.png?raw=true",
     "screenshots": [
+      "https://files.catbox.moe/r0vsqc.png",
       "https://github.com/calculatelate/massiveOverhaul/blob/main/Promo%201.png?raw=true",
       "https://github.com/calculatelate/massiveOverhaul/blob/main/Promo%202.png?raw=true"
     ],
@@ -36,7 +37,7 @@
     ],
     "featured": true,
     "recent": true,
-    "todays_featured": false
+    "todays_featured": true
   },
   {
     "id": "4",
@@ -74,9 +75,9 @@
       { "title": "IPSW 2012", "url": "https://files.catbox.moe/a7g9es.ipsw" },
       { "title": "IPSW 2015", "url": "https://files.catbox.moe/jw6kdo.ipsw" }
     ],
-    "featured": false,
+    "featured": true,
     "recent": true,
-    "todays_featured": true
+    "todays_featured": false
   },
   {
     "id": "2",
