@@ -10,7 +10,8 @@
     <div class="topbar"><h2>NanoLib</h2>
     <a href="https://forms.gle/Wqf1pNNFPdfFNVRp9" target="_blank" id="upload-link">
         <img src="Assets/UploadButton.png" alt="Upload" id="upload-btn">
-    </a></div>
+    </a>
+    </div>
 
     <div class="content">
         <div id="main" class="main active">
@@ -39,10 +40,11 @@
             </div>
 
     <div class="bottombar">
-        <button id="mainpage-btn">Mainpage</button>
-        <button id="featured-btn">Featured</button>
-        <button id="recent-btn">Recent</button>
-        <button id="search-btn">Search</button>
+        <button id="mainpage-btn" data-label="🏠 Mainpage" data-icon="🏠">Mainpage</button>
+        <button id="featured-btn" data-label="⭐ Featured" data-icon="⭐">Featured</button>
+        <button id="recent-btn" data-label="🕑 Recent" data-icon="🕑">Recent</button>
+        <button id="search-btn" data-label="🔍 Search" data-icon="🔍">Search</button>
+        <button id="documentation-btn" data-label="📖 Docs" data-icon="📖" onclick="window.location.href='documentation.html'">Docs</button>
     </div>
 
     <script src="script.js"></script>

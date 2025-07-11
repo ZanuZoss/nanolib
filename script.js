@@ -9,6 +9,18 @@ document.addEventListener("DOMContentLoaded", () => {
     const searchBtn = document.getElementById("search-btn");
 
     const buttons = [mainBtn, featuredBtn, recentBtn, searchBtn];
+    function updateBottomBarLabels() {
+        const isMobile = window.innerWidth <= 600;
+        document.querySelectorAll('.bottombar button').forEach(button => {
+            const label = button.getAttribute('data-label');
+            const icon = button.getAttribute('data-icon');
+            if (label && icon) {
+                button.textContent = isMobile ? icon : label;
+            }
+        });
+    }
+    updateBottomBarLabels();
+    window.addEventListener('resize', updateBottomBarLabels);
 
     mainDiv.classList.add("active");
     mainBtn.classList.add("selected");

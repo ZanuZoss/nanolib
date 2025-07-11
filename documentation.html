@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Documentation - NanoLib</title>
+    <style>
+        :root {
+            --primary-color: #5865f2;
+            --background: #efefef;
+            --text-color: #111;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: var(--background);
+            color: var(--text-color);
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Top Bar */
+        .topbar {
+            background: linear-gradient(to bottom, #333, #111);
+            color: white;
+            padding: 1rem 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 64px;
+            border-bottom: 1px solid #000;
+        }
+
+        .topbar h2 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .topbar h2::before {
+            content: "📘";
+            font-size: 1.4rem;
+        }
+
+        /* Main Content */
+        .content {
+            flex: 1;
+            padding: 2rem 1rem;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        h3 {
+            color: var(--primary-color);
+            margin-top: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        ol {
+            padding-left: 1.2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.75rem;
+        }
+
+        ul {
+            margin-top: 0.5rem;
+            margin-left: 1rem;
+        }
+
+        a {
+            color: var(--primary-color);
+            text-decoration: underline;
+            word-break: break-word;
+        }
+
+        /* Bottom Bar (entire bar is clickable) */
+        .bottombar {
+            background: linear-gradient(to bottom, #333, #111);
+            padding: 1.2rem;
+            text-align: center;
+            color: white;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            border-top: 1px solid #000;
+            transition: background 0.3s;
+        }
+
+        .bottombar:hover {
+            background: linear-gradient(to bottom, #444, #222);
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .topbar h2 {
+                font-size: 1.25rem;
+            }
+
+            .content {
+                padding: 1.5rem 1rem;
+            }
+
+            .bottombar {
+                font-size: 1rem;
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="topbar">
+        <h2>NanoLib Documentation</h2>
+    </header>
+
+    <main class="content">
+        <section id="ipsw-flashing">
+            <h3>🔧 IPSW Flashing</h3>
+            <p>
+                IPSW flashing is the process of installing or restoring firmware on an Apple device using an IPSW file.
+                This is commonly used to update, downgrade, or return a device to factory settings.
+            </p>
+            <ol>
+                <li>Download the correct IPSW file for your device model.</li>
+                <li>Put the device into <strong>DFU</strong> or <strong>Recovery Mode</strong>.</li>
+                <li>Use iTunes or a third-party tool to select and flash the IPSW file.</li>
+                <li>Wait for the flashing to complete. <strong>Do not disconnect</strong> the device during this step.</li>
+                <li>Once finished, your device should reboot with the new firmware installed.</li>
+            </ol>
+        </section>
+
+        <section id="unbricking">
+            <h3>🧱 Unbricking</h3>
+            <p>
+                Unbricking is the process of reviving a device that's become unresponsive or stuck (a.k.a. "bricked").
+                This usually happens due to failed firmware updates, corrupted files, or other software-related issues.
+            </p>
+            <ol>
+                <li>
+                    Identify the type of brick:
+                    <ul>
+                        <li><strong>Soft Brick:</strong> Device powers on but bootloops or fails to load the OS.</li>
+                        <li><strong>Hard Brick:</strong> Device shows no signs of life — no screen, no response.</li>
+                    </ul>
+                </li>
+                <li>
+                    For soft bricks, try entering Recovery Mode and restoring using iTunes or use 
+                    <a href="https://lycanld.github.io/LeUnBrIck" target="_blank" rel="noopener noreferrer">Lycan's LeUnBrIck Tool</a> for guided recovery.
+                </li>
+                <li>
+                    For hard bricks... well, you're cooked. 💀 Time to break out the soldering iron or hope for a miracle.
+                </li>
+                <li>
+                    Ensure you have the correct firmware files and flashing tools for your device model.
+                </li>
+                <li>
+                    Use step-by-step instructions from 
+                    <a href="https://lycanld.github.io/LeUnBrIck" target="_blank" rel="noopener noreferrer">LeUnBrIck</a> to attempt recovery.
+                </li>
+            </ol>
+        </section>
+    </main>
+
+    <footer class="bottombar" onclick="window.location.href='index.html'">
+        ⬅ Back to Main
+    </footer>
+</body>
+</html>
