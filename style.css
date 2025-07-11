@@ -365,3 +365,84 @@ h2 {
 .hidden {
     display: none;
 }
+
+/* Mobile support */
+@media (max-width: 600px) {
+    .main {
+        height: auto;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .lside, .rside {
+        float: none;
+        width: 100%;
+        margin: 0;
+        height: auto;
+        text-align: center;
+    }
+
+    .rside {
+        margin-left: 0;
+        margin-top: 20px;
+        height: auto;
+    }
+
+    .theme-preview {
+        width: 100% !important;
+        height: auto !important;
+        flex-direction: column;
+        align-items: center;
+        white-space: normal; /* allow wrapping */
+        overflow-wrap: break-word; /* break long words */
+    }
+
+    .theme-name-author {
+        white-space: normal; /* allow wrapping */
+        overflow: visible; /* show overflow */
+        text-overflow: clip; /* no ellipsis */
+        max-width: 100%; /* ensure max width */
+        word-break: break-word; /* break long words */
+    }
+
+    .theme-desc {
+        white-space: normal !important; /* override nowrap */
+        overflow: visible !important; /* override hidden */
+        text-overflow: clip !important; /* no ellipsis */
+        max-width: 100% !important;
+        word-break: break-word !important;
+    }
+
+    .theme-img {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .bottombar {
+        height: 60px;
+    }
+
+    .bottombar button {
+        font-size: 1.2em;
+        padding: 10px 0;
+    }
+
+    #upload-link {
+        position: absolute; /* position in topbar */
+        right: 10px;
+        top: 8px;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        z-index: 30; /* above other elements */
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    /* Add bottom padding to theme detail to avoid overlap with bottombar */
+    .theme-detail {
+        padding-bottom: 80px;
+    }
+}
