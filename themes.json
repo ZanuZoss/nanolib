@@ -4,11 +4,11 @@
     "name": "nanOS Pacific (Tanuki Edition)",
     "author": "Lycan",
     "description": "A vibrant, modern theme for the iPod nano 7G based on SlohBur's nanOS Pacific theme.",
-    "long_description": ", featuring BNA mascot and a fresh Pacific-inspired color scheme. Includes custom light icons and subtle UI tweaks for a unique look and feel.",
+    "long_description": "A vibrant, modern theme featuring BNA mascot and a fresh Pacific-inspired color scheme. Includes custom light icons and subtle UI tweaks for a unique look and feel.",
     "ipod": "7th Generation",
     "image": "https://i.pinimg.com/736x/80/cf/56/80cf5639e119f503cc1cc0dd43f47fba.jpg",
     "screenshots": [
-      "https://github.com/lycanld/IPSWVault/releases/download/tanuki1/80cf5639e119f503cc1cc0dd43f47fba.jpg?raw=true"
+      "https://lycanld.github.io/IPSWVault/assets/nanOS_Pacific_Tanuki/preview_1.png"
     ],
     "downloads": [
       { "title": "IPSW 2012 - Light Mode", "url": "https://github.com/lycanld/IPSWVault/releases/download/tanuki1/nanOS_Pacific_nano7_Light_Icons_2012.Lycan.s.Moddedc.Edition.ipsw" },

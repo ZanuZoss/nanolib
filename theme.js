@@ -46,8 +46,11 @@ document.title = theme.name + " - NanoLib";
                             <span class="theme-name">${theme.name}</span>
                             <span class="theme-author"> by ${theme.author || "Unknown"}</span>
                         </div>
+                        <h3>Description</h3>
                         <div class="theme-desc">${theme.description}</div>
-                        <div class="theme-ipod">${theme.ipod}</div>
+                        <h3>Compatible iPod</h3>
+                        <div class="theme-ipod">- ${theme.ipod}</div>
+                        <h3>Detailed Description</h3>
                         <div class="theme-long-desc">${theme.long_description || ""}</div>
                         ${screenshotsHtml}
                         ${downloadsHtml}
