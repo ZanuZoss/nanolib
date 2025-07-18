@@ -1,4 +1,24 @@
 [
+    {
+    "id": "7",
+    "name": "Black and pink ˙⋆✮",
+    "author": "A.I.S / ace.is.sorry",
+    "description": "A black and pink themed overhaul of wallpapers and icons!",
+    "long_description": "Empty",
+    "ipod": "7th Generation",
+    "image": "https://files.catbox.moe/1q8s7o.png",
+    "screenshots": [
+      "https://files.catbox.moe/4n32pg.jpg",
+      "https://files.catbox.moe/fnohf5.jpg"
+    ],
+    "downloads": [
+      { "title": "IPSW 2012", "url": "https://files.catbox.moe/uolyqi.ipsw" },
+      { "title": "IPSW 2015", "url": "https://files.catbox.moe/nejblj.ipsw" }
+    ],
+    "featured": true,
+    "recent": true,
+    "todays_featured": true
+  },
   {
     "id": "6",
     "name": "nanOS Pacific (Tanuki Edition)",
@@ -37,7 +57,7 @@
     ],
     "featured": true,
     "recent": true,
-    "todays_featured": true
+    "todays_featured": false
   },
   {
     "id": "4",
