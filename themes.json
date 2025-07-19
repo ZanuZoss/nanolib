@@ -1,5 +1,25 @@
 [
     {
+    "id": "8",
+    "name": "Silly Cat Theme",
+    "author": "BraixDragon",
+    "description": "A quickly made silly cat theme",
+    "long_description": "-   1 Wallpaper,    -   Cool cat Icons,-   Even cooler Cat buttons for music",
+    "ipod": "7th Generation",
+    "image": "https://github.com/BraixDragon/BraixNano7Themes/releases/download/6/Theme.Logo.png?raw=true",
+    "screenshots": [
+      "https://github.com/BraixDragon/BraixNano7Themes/releases/download/6/Screenshot.png?raw=true",
+      "https://github.com/BraixDragon/BraixNano7Themes/releases/download/6/Photo.png?raw=true"
+    ],
+    "downloads": [
+      { "title": "IPSW 2012", "url": "https://github.com/BraixDragon/BraixNano7Themes/releases/download/6/cat2012.ipsw" },
+      { "title": "IPSW 2015", "url": "https://github.com/BraixDragon/BraixNano7Themes/releases/download/6/cat2015.ipsw" }
+    ],
+    "featured": false,
+    "recent": true,
+    "todays_featured": false
+  },
+  {
     "id": "7",
     "name": "Black and pink ˙⋆✮",
     "author": "A.I.S / ace.is.sorry",
